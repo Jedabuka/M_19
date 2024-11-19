@@ -1,0 +1,43 @@
+python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
+buyer1 = Buyer.objects.create(name="Djon", balance=1000.00, age=26)
+buyer2 = Buyer.objects.create(name="Anton", balance=2000.00, age=33)
+buyer3 = Buyer.objects.create(name="Tom", balance=500.00, age=17)
+Buyer.objects.all()
+game1 = Game.objects.create(
+...     title="GTA 18+",
+...     cost=600.00,
+...     size=40.00,
+...     description="Приключенческий боевик",
+...     age_limited=True
+... )
+game2 = Game.objects.create(
+...     title="Need for speed",
+...     cost=300.00,
+...     size=30.00,
+...     description="Захватывающая гонка",
+...     age_limited=False
+... )
+game3 = Game.objects.create(
+...     title="StarCraft2 18+",
+...     cost=500.00,
+...     size=35.00,
+...     description="Стратегия",
+...     age_limited=True
+... )
+Game.objects.all()
+>>> game1.buyer.set([buyer1])
+>>> game2.buyer.set([buyer1])
+>>> game3.buyer.set([buyer1])
+>>> game1.buyer.set([buyer1])
+>>> game1.buyer.set([buyer2])
+>>> game3.buyer.set([buyer2])
+>>> game2.buyer.set([buyer3])
+>>> game1.buyer.set([buyer1])
+>>> game2.buyer.set([buyer1])
+>>> game3.buyer.set([buyer1])
+>>> game1.buyer.add(buyer2)
+>>> game3.buyer.add(buyer2)
+>>> game2.buyer.add(buyer3)
+

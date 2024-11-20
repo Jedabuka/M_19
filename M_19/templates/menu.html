@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фруктовый рай</title>
+</head>
+<body>
+    <header>
+        {% block header %}
+        <h1 align="center">Главная страница</h1>
+        {% endblock %}
+    </header>
+
+    <nav>
+        {% block menu %}
+            <a href="http://127.0.0.1:8000/main/"><h4 align="center">Главная</h4></a>
+            <a href="http://127.0.0.1:8000/main/shop/"><h4 align="center">Магазин</h4></a>
+            <a href="http://127.0.0.1:8000/main/basket/"><h4 align="center">Корзина</h4></a>
+        {% endblock %}
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+</body>
+</html>

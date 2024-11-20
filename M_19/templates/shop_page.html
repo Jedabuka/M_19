@@ -1,0 +1,18 @@
+{% extends 'menu.html' %}
+
+{% block header %}
+    <h2 align="center">{{ title }}</h2>
+{% endblock %}
+
+{% block menu %}{{ block.super }}{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    <div style="display: flex; justify-content: center; align-items: center; height: 150px;">
+        <ul>
+            {% for i in games %}
+                <li><h4>{{ i.title }} | {{ i.description }}. Стоимость: {{ i.cost }}₽ <button>{{ buy }}</button></h4></li>
+            {% endfor %}
+        </ul>
+
+{% endblock %}

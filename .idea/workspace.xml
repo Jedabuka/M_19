@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cecd9f01-bf72-4ba3-b151-bd6c61c9be03" name="Changes" comment="task2">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/task1/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/templates/basket_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/templates/main_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/templates/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/templates/registration_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/M_19/templates/shop_page.html" afterDir="false" />
+    <list default="true" id="cecd9f01-bf72-4ba3-b151-bd6c61c9be03" name="Changes" comment="task3">
+      <change afterPath="$PROJECT_DIR$/M_19/sqlite.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/M_19/task1/migrations/0002_article.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M_19/M_19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_19/M_19/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M_19/M_19/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_19/M_19/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M_19/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_19/task1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_19/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/M_19/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M_19/task1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/M_19/task1/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/Python/M_19_Django2/M_19/task1"
   }
 }]]></component>
@@ -97,14 +92,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732037558720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task3">
+      <option name="closed" value="true" />
+      <created>1732122993493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732122993493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="task1" />
     <MESSAGE value="task2" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2" />
+    <MESSAGE value="task3" />
+    <option name="LAST_COMMIT_MESSAGE" value="task3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

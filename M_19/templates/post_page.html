@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post List</title>
+    <style>
+        .pagination { display: flex; gap: 5px; }
+        .pagination a, .pagination span { padding: 5px 10px; border: 1px solid #ddd; text-decoration: none; }
+        .pagination .current { background-color: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Список постов</h1>
+
+    <form method="get">
+        <label for="items_per_page">Кол-во постов на странице:</label>
+        <select name="items_per_page" id="items_per_page" onchange="this.form.submit()">
+            <option value="3" {% if items_per_page == '3' %}selected{% endif %}>3</option>
+            <option value="6" {% if items_per_page == '6' %}selected{% endif %}>6</option>
+            <option value="9" {% if items_per_page == '9' %}selected{% endif %}>9</option>
+            <option value="12" {% if items_per_page == '12' %}selected{% endif %}>12</option>
+        </select>
+    </form>
+
+    <ul>
+        {% for post in page_obj %}
+            <li><strong>{{ post.title }}</strong><br>{{ post.content }}</li>
+        {% endfor %}
+    </ul>
+
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }}&items_per_page={{ items_per_page }}">Предыдущая</a>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+            {% if num == page_obj.number %}
+                <span class="current">{{ num }}</span>
+            {% else %}
+                <a href="?page={{ num }}&items_per_page={{ items_per_page }}">{{ num }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}&items_per_page={{ items_per_page }}">Следующая</a>
+        {% endif %}
+    </div>
+</body>
+</html>
